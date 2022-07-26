@@ -40,11 +40,15 @@ export class Dino{
   get escapedTemplate(){
     return `
     <div class="escaped">
-      <marquee behavior="alternate" direction="right" scrolldelay="100">
-        <marquee behavior="alternate" direction="up" scrolldelay="100">
+      <marquee behavior="alternate" direction="${Math.random() > .5 ? 'right': 'left'}" scrolldelay="150" scrollammount="10">
+        <marquee behavior="alternate" direction="${Math.random() > .5 ? 'down': 'up'}" scrolldelay="30">
+          <marquee behavior="alternate" direction="${Math.random() > .5 ? 'left': 'right'}" scrolldelay="10" scrollammount="20">
+          <marquee behavior="alternate" direction="${Math.random() > .5 ? 'up': 'down'}" scrolldelay="80" scrollammount="15">
           <h2 class="animal happy" onclick="app.dinosController.catch('${this.name}')">
             ${this.emoji}
           </h2>
+       </marquee>
+       </marquee>
       </marquee>
     </marquee>
   </div>

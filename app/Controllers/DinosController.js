@@ -47,7 +47,10 @@ function _escape(dino){
     dino.escaped = true
     console.warn(dino.name, 'has escaped');
     dinosService.escape(dino)
-    _drawEscapees()
+    // keeps escaped dino from re-drawing every time another escapes
+    if(ProxyState.escapedDinos.length < 2){
+      _drawEscapees()
+    }
   }
 }
 

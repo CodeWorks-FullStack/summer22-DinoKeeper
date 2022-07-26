@@ -30,15 +30,26 @@ body {
   position: fixed;
   z-index: 50000;
   background-color: rgba(0, 0, 0, 0.518);
+  width: 100vw;
 }
 
-.escaped marquee {
+.escaped>marquee {
   display: block;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  width: 100%;
 }
 
-.escaped marquee marquee {
+.escaped>marquee>marquee {
   height: 100%;
-  width: 100vw;
+  width: 100%;
+}
+
+
+.escaped>marquee>marquee>marquee {
+  height: 20%;
+  width: 20%;
+}
+
+.escaped>marquee>marquee>marquee>marquee {
+  height: 15vh;
 }
