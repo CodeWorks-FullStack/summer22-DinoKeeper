@@ -1,0 +1,44 @@
+/* BASIC STYLES HERE */
+body {
+  background-color: olivedrab;
+}
+
+.pen {
+  border: 4px dashed rgb(203, 203, 203);
+}
+
+.pen marquee {
+  min-height: 25vh;
+  display: block;
+  width: 100%;
+}
+
+.pen marquee marquee {
+  height: 100%;
+  width: 100%;
+}
+
+.animal {
+  cursor: grab;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+  overflow: visible;
+}
+
+.escaped {
+  position: fixed;
+  z-index: 50000;
+  background-color: rgba(0, 0, 0, 0.518);
+}
+
+.escaped marquee {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+}
+
+.escaped marquee marquee {
+  height: 100%;
+  width: 100vw;
+}
